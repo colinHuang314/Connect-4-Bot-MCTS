@@ -274,7 +274,7 @@ if __name__ == "__main__":
         if my_turn:
             next_state.printState()
             
-            best_node = mcts(next_state, 2, 5_000, 4)
+            best_node = mcts(next_state, rollouts=2, itterations=5_000, run_time=4)
             next_state = best_node.state
         else:
             next_state.invert().printState()
@@ -302,4 +302,3 @@ if __name__ == "__main__":
         next_state.copy().invert().printState()
         
     print("Winner: " + str(next_state.get_winner()) if next_state.get_winner() else "Tie")
-
