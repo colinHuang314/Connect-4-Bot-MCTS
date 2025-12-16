@@ -1,15 +1,38 @@
-connect 4 bot
+# **Connect 4 MCTS Bot**
 
-applies the basic structure of the MCTS algorithm
+A Connect 4 AI built using Monte Carlo Tree Search (MCTS).
+This project is intended for validating an MCTS implementation before extending it toward an AlphaZero-style agent.
 
-testing MCTS to make sure it works before applying it to an AlphaZero style bot
+## **Features**
 
-semi random rollouts that take and block wins
+- Core MCTS implementation (selection, expansion, simulation, backpropagation)
 
-not optimized
+- Semi-random rollouts that:
 
-prints to the console 
+  - Take immediate winning moves
 
-if you want to try it out you can change line 277 to make the computer think for shorter or longer.
+  - Block opponent wins when possible
 
-can toggle line 269 to change who goes first
+- Console-based gameplay
+
+- Configurable thinking time
+
+- Configurable starting player
+
+## **Notes on Performance**
+
+- Plays fairly well, but is not perfect
+
+- Given enough simulations, MCTS should approach optimal play
+
+- Not optimized for speed or efficiency (clarity over performance)
+
+## **Usage**
+
+- To experiment with the bot, edit the following lines in the source code:
+
+  - AI thinking time: **Modify line 277 to control how long the bot runs MCTS before choosing a move.**
+
+  - Starting player: **Toggle line 269 to change which player goes first.**
+
+- The game state and moves are printed directly to the console.
