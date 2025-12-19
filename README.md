@@ -3,7 +3,7 @@
 A Connect 4 AI built using Monte Carlo Tree Search (MCTS).
 This project is intended for validating an MCTS implementation before extending it toward an AlphaZero-style agent.
 
-## **Features**
+## ✨**Features**
 
 - Core MCTS implementation (selection, expansion, simulation, backpropagation)
 
@@ -19,7 +19,7 @@ This project is intended for validating an MCTS implementation before extending 
 
 - Configurable starting player
 
-## **Notes on Performance**
+## 🚀**Notes on Performance**
 
 - Plays fairly well, but is not perfect
 
@@ -27,7 +27,7 @@ This project is intended for validating an MCTS implementation before extending 
 
 - Not optimized for speed or efficiency (clarity over performance)
 
-## **Usage**
+## 📖**Usage**
 
 - To experiment with the bot, edit the following lines in the source code:
 
